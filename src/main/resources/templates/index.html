@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <form th:action="@{'/add-car'}" method="post">
+            NAME : <input type="text" name="name">
+            MAX SPEED : <input type="number" name="speed">
+            ENGINE VOLUME : <input type="number" name="engineVolume">
+            <button>ADD CAR</button>
+        </form>
+        <h3 th:each="car : ${cars}">
+            <span th:text="${car.id}"></span> -
+            Car <span th:text="${car.name}"></span>
+            with <span th:text="${car.speed}"></span> km/h
+            engine volume <span th:text="${car.engineVolume}"></span> liters
+        </h3>
+    </body>
+</html>

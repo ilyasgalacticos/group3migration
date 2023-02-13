@@ -1,0 +1,48 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="2023_02_13_0_0_1_create_init_tables" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_1_create_init_tables.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+    <changeSet id="2023_02_13_0_0_2_insert_default_data" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_2_insert_default_data.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+    <changeSet id="2023_02_13_0_0_3_update_car_table" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_3_update_car_table.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+    <changeSet id="2023_02_13_0_0_3_update_car_table" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_3_update_car_table.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+    <changeSet id="2023_02_13_0_0_4_upate_car_table" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_4_upate_car_table.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+    <changeSet id="2023_02_13_0_0_5_insert_default_data" author="ilyas.zhuanyshev">
+        <sqlFile
+                path="db/changelog/changes/2023_02_13_0_0_5_insert_default_data.sql"
+                dbms="mysql" encoding="UTF-8" endDelimiter=";"
+                splitStatements="true"/>
+    </changeSet>
+
+</databaseChangeLog>
